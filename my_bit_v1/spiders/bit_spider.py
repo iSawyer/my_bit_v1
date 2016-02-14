@@ -100,7 +100,7 @@ class BitSpider(CrawlSpider):
 					if(fields[0] == 'url' and fields[1] == 'count'):
 						continue
 					url = fields[0]
-					#level =	int(fields[1])
+					level =	int(fields[1])
 					#if(level >= self.thres):
 					self.start_urls.append(url)
 					self.url_dic[url] = level
